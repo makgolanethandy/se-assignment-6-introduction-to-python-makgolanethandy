@@ -9,16 +9,55 @@ Answer the following questions based on your understanding of Python programming
 
 1. Python Basics:
    - What is Python, and what are some of its key features that make it popular among developers? Provide examples of use cases where Python is particularly effective.
+   
+   - Python- One of the most popular programming languages.
+   - Features-Free and open source, Community support, standard library, easy to code, easy to read(https://www.geeksforgeeks.org/python-features/).
+   - Python is used in data science and data analytics. Numerical computation are done using the library known as Numpy.
+
 
 2. Installing Python:
    - Describe the steps to install Python on your operating system (Windows, macOS, or Linux). Include how to verify the installation and set up a virtual environment.
 
+   - Search  https://www.python.org/downloads/ on your web browser
+   - Select Python version to download
+   - Click on Install now
+   - Select Customize installation and proceed.
+   - Click on the Add Path check box, it will set the Python path automatically on your environmental path
+   - Continue until installation is done
+   
+   - To verify Installation:
+      - Open python
+      - Write the command :python --version
+      - This should return the version of python installed in your computer system
+   
+   - To set up virtaul environment
+      -  OPEN Python and write the below commands:
+         - mkdir Myproject
+         - cd Myproject
+         - python<version>-m venv env e.g python3.8 -m venv env
+
+
 3. Python Syntax and Semantics:
    - Write a simple Python program that prints "Hello, World!" to the console. Explain the basic syntax elements used in the program.
+
+   -print ("Hello, World!")
+
+      - print()=outputs data to the console
+      - ""(closed quotation)- used to represent text
 
 4. Data Types and Variables:
    - List and describe the basic data types in Python. Write a short script that demonstrates how to create and use variables of different data types.
 
+   - Data types-
+      - Text Type:	str
+         - print ("Hello, World!")
+      - Numeric Types:	int, float, 
+         - x = 20
+      - Sequence Types:	list, tuple
+         - x = ["apple", "banana", "cherry"]
+      - Boolean Type:	bool
+         - x = True
+         
 5. Control Structures:
    - Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.
 
