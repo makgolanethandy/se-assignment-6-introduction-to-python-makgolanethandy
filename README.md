@@ -49,13 +49,13 @@ Answer the following questions based on your understanding of Python programming
    - List and describe the basic data types in Python. Write a short script that demonstrates how to create and use variables of different data types.
 
    - Data types-
-      - Text Type:	str
-         - print ("Hello, World!")
-      - Numeric Types:	int, float, 
+      - Text Type:	str- sequence of charecters enclosed in quotation marks
+         - "Hello, World!"
+      - Numeric Types:	int, float, -Numbers
          - x = 20
-      - Sequence Types:	list, tuple
+      - Sequence Types:	list- ordered collection of items. Closed in parentheses
          - x = ["apple", "banana", "cherry"]
-      - Boolean Type:	bool
+      - Boolean Type:	bool-represent one of the two values
          - x = True
          
 5. Control Structures:
