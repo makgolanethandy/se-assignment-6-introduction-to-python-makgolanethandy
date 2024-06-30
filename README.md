@@ -26,15 +26,15 @@ Answer the following questions based on your understanding of Python programming
    - Continue until installation is done
    
    - To verify Installation:
-      - Open python
+      - Open Command prompt
       - Write the command :python --version
       - This should return the version of python installed in your computer system
    
    - To set up virtaul environment
-      -  OPEN Python and write the below commands:
+      -  OPEN Command Prompt and write the below commands:
          - mkdir Myproject
          - cd Myproject
-         - python<version>-m venv env e.g python3.8 -m venv env
+         - pip install virtualenvironment
 
 
 3. Python Syntax and Semantics:
@@ -60,12 +60,34 @@ Answer the following questions based on your understanding of Python programming
          
 5. Control Structures:
    - Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.
+      - Conditional statements and loops are essential control structures in Python, enabling decision-making and repetitive actions. 
+      - 'If-else' statement
+         - a = 3
+           if a > 5:
+                  print("a is greater than 5")
+            else:
+                  print("a is not greater than 5")
+
+      - 'for' loop
+        - countries = ["South africa", "Kenya", "Niger"]
+          for country in countries
+            print(country)
 
 6. Functions in Python:
    - What are functions in Python, and why are they useful? Write a Python function that takes two arguments and returns their sum. Include an example of how to call this function.
 
+      - Blocks of reusable code designed to perform a specific task. They allow for more organized, readable and reusable code.
+      - Example:
+         >>> def add(a, b):
+         ...     return a + b
+         ...
+         >>> result = add(5, 3)
+         >>> print(result)
+         8
+
 7. Lists and Dictionaries:
    - Describe the differences between lists and dictionaries in Python. Write a script that creates a list of numbers and a dictionary with some key-value pairs, then demonstrates basic operations on both.
+   
 
 8. Exception Handling:
    - What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.
