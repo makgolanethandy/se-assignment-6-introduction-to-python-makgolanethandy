@@ -118,10 +118,10 @@ Answer the following questions based on your understanding of Python programming
     - Exception Handling- allows you to handle errors and execute code even if an error occurs.
     def read_file(file_path):
     try:
-        # Attempt to open the file
+        #Attempt to open the file
         file = open(file_path, 'r')
         
-        # Attempt to read the file contents
+        #Attempt to read the file contents
         content = file.read()
         print("File content:")
         print(content)
