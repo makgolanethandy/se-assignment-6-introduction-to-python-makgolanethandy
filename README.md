@@ -69,9 +69,13 @@ Answer the following questions based on your understanding of Python programming
                   print("a is not greater than 5")
 
       - 'for' loop
-        - countries = ["South africa", "Kenya", "Niger"]
-          for country in countries
-            print(country)
+        - >>> countries =['South Africa', 'Kenya', 'Niger']
+          >>> for country in countries:
+          ...       print(country)
+          ...
+          South Africa
+          Kenya
+          Niger
 
 6. Functions in Python:
    - What are functions in Python, and why are they useful? Write a Python function that takes two arguments and returns their sum. Include an example of how to call this function.
@@ -88,15 +92,89 @@ Answer the following questions based on your understanding of Python programming
 7. Lists and Dictionaries:
    - Describe the differences between lists and dictionaries in Python. Write a script that creates a list of numbers and a dictionary with some key-value pairs, then demonstrates basic operations on both.
    
+       - The difference is that lists allows duplicates in theier data whereas dictionaries do not allow duplicates in their data.
+       - dictionary:
+       >>> thisdict = {
+       ...  "Continent": "Africa",
+       ...   "country": "South Africa",
+       ...   "Freedom": 1994,
+       ...   "Continent":"Africa"
+       ... }
+       >>> print(thisdict)
+       {'Continent': 'Africa', 'country': 'South Africa', 'Freedom': 1994}
+
+       - Lists:
+       >>> thislist = {
+       ...   "Continent": "Africa",
+       ...   "country": "South Africa",
+       ...   "Freedom": 1994,
+       ...   "Continent":"Africa"
+       ... }
+       >>> print(thislist)
+       {'Continent': 'Africa', 'country': 'South Africa', 'Freedom': 1994}
 
 8. Exception Handling:
    - What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.
+    - Exception Handling- allows you to handle errors and execute code even if an error occurs.
+    def read_file(file_path):
+    try:
+        # Attempt to open the file
+        file = open(file_path, 'r')
+        
+        # Attempt to read the file contents
+        content = file.read()
+        print("File content:")
+        print(content)
+        
+    except FileNotFoundError:
+        # Handle the case where the file does not exist
+        print(f"Error: The file '{file_path}' was not found.")
+        
+    except IOError:
+        # Handle other I/O errors (e.g., permission denied)
+        print(f"Error: An I/O error occurred while trying to read the file '{file_path}'.")
+        
+    finally:
+        # Ensure that the file is properly closed
+        try:
+            file.close()
+            print("File has been closed.")
+        except NameError:
+            # Handle the case where the file was never opened
+            print("File was never opened, so no need to close it.")
+
 
 9. Modules and Packages:
    - Explain the concepts of modules and packages in Python. How can you import and use a module in your script? Provide an example using the `math` module.
+    
+    - Modules: Reusable pieces of code, using `import` to include  them.Packages-Collections of modules, using `pip` to install packages.
+
+    - Write the below command on Command prompt to install Numpy 
+      - pip install numpy
+    - To import your script, write the below command on python
+      >>>import numpy as np
+      >>> arr= np.array([1,2,3,4,5])
+      >>> print(arr)
+         [1 2 3 4 5]
 
 10. File I/O:
     - How do you read from and write to files in Python? Write a script that reads the content of a file and prints it to the console, and another script that writes a list of strings to a file.
+
+    - Given that the file name is "File", to read the file, you use the below commands:
+      f = open("File.txt", "r")
+      print(f.read())
+
+   - Writes a list of string:
+      def write_list_to_file(C:\Recapproject, string_list):
+         try:
+            with open(C:\Recapproject, 'w') as file:
+               for string in string_list:
+                  file.write(string + '\n')
+            print(f"Successfully wrote to the file '{file_path}'.")
+         except IOError:
+            print(f"Error: An I/O error occurred while trying to write to the file '{file_path}'.")
+            
+
 
 # Submission Guidelines:
 - Your answers should be well-structured, concise, and to the point.
